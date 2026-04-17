@@ -21,4 +21,9 @@ RUN ./buildInDocker.sh --cuda $CUDA --master $MASTER && rm buildInDocker.sh
 ENV PATH /usr/local/bin/OpenMVS:$PATH
 
 WORKDIR /app/
+COPY Dockerfile Dockerfile
+COPY LICENSE LICENSE
+COPY COPYRIGHT.md COPYRIGHT.md
+COPY README.md README.md
+
 COPY run_openmvs.py run_openmvs.py

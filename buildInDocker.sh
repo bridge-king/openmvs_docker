@@ -98,6 +98,8 @@ else
     cd openMVS && git checkout 0beff21 && cd ..
 fi
 
+echo "Replacing libs/MVS/SceneReconstruct.cpp"
+cp libs/MVS/SceneReconstruct.cpp openMVS/libs/MVS/SceneReconstruct.cpp
 echo "Replacing libs/Common/Types.inl"
 cp libs/Common/Types.inl openMVS/libs/Common/Types.inl && rm -rf libs
 

@@ -45,4 +45,4 @@ done
 #docker build -t="openmvs-ubuntu$CUDA_CONTAINER_SUFFIX" --build-arg "USER_ID=$(id -u)" --build-arg "GROUP_ID=$(id -g)" $CUDA_BUILD_ARGS $MASTER_ARGS .
 #docker run $CUDA_RUNTIME_ARGS --entrypoint bash --ipc=host --shm-size=4gb -w /work -v "$WORKSPACE:/work" $DISPLAY_ARGS -it openmvs-ubuntu$CUDA_CONTAINER_SUFFIX
 
-docker build -t="openmvs-ubuntu$CUDA_CONTAINER_SUFFIX:v2.4.0.W" $CUDA_BUILD_ARGS $MASTER_ARGS .
+docker build -t="openmvs-ubuntu$CUDA_CONTAINER_SUFFIX:v2.4.0.W2" $CUDA_BUILD_ARGS $MASTER_ARGS .
